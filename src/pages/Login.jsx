@@ -17,13 +17,13 @@ export const Login = () => {
     });
     const usersJSON = await users.json();
     const user = usersJSON.find(
-      (u) => u.username === data.username && u.password === data.password
+      (u) => u.email === data.email && u.password === data.password
     );
     if (user) {
       toast.success("Usuário logado com sucesso!");
-      localStorage.setItem("@AlertAir:username", user.username);
+      sessionStorage.setItem("@USERINFO:MindWell", JSON.stringify(user));
       setTimeout(() => {
-        navigate("/menu");
+        navigate("/home");
       }, 2000);
     } else {
       toast.error(
@@ -40,9 +40,9 @@ export const Login = () => {
         <form onSubmit={handleSubmit(onSubmit)} className="login__form">
           <h2 className="login__title">Login</h2>
           <input
-            type="text"
-            placeholder="Nome de Usuário"
-            {...register("username", { required: true })}
+            type="email"
+            placeholder="Email do Usuário"
+            {...register("email", { required: true })}
             required
           />
           <input

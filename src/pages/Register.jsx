@@ -47,6 +47,12 @@ export const Register = () => {
             required
           />
           <input
+            type="email"
+            placeholder="Email do Usuário"
+            {...register("email")}
+            required
+          />
+          <input
             type="password"
             placeholder="Senha"
             {...register("password")}
