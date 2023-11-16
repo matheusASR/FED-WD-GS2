@@ -28,10 +28,12 @@ export const Header = () => {
                 {userInfos ? (
                     <>
                         <p className="header__username">OLÁ {userInfo.username ? userInfo.username.toUpperCase() : null}</p>
-                        <p>{userInfo.email}</p>
-                        <button onClick={() => logout()}>Logout</button>
+                        <p className="header__email">{userInfo.email}</p>
+                        <button className="header__logout" onClick={() => logout()}>Logout</button>
                     </>
-                ) : null}
+                ) : (
+                    <p className="header__title">MindWell - Acompanhamento e Cuidado Pessoal</p>
+                )}
             </header>
         </>
     )

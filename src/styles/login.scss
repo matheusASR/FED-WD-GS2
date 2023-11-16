@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 75vh;
+  height: 85vh;
   background-color: rgb(255, 255, 255);
 }
 
@@ -17,7 +17,7 @@
   gap: 20px;
   border: 2px solid black;
   border-radius: 15px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   z-index: 1;
 }
 
@@ -40,6 +40,10 @@
   height: 50px;
   font-size: 18px;
   border-radius: 15px;
+}
+
+.login__btn__login__page {
+  background-color: yellow;
 }
 
 .login__btn__login__page,
