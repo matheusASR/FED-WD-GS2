@@ -27,5 +27,14 @@
         "description": "Registra e analisa dados para identificar padrões, facilitando ajustes no estilo de vida e tratamentos médicos personalizados."
       }
     ]
-  }
+  },
+  "patientData":  [
+    { "hour": "08:00", "heartRate": 80, "temperature": 36.5, "bloodPressure": "120/80" },
+    { "hour": "10:00", "heartRate": 78, "temperature": 36.7, "bloodPressure": "118/76" },
+    { "hour": "12:00", "heartRate": 82, "temperature": 36.9, "bloodPressure": "122/82" },
+    { "hour": "14:00", "heartRate": 85, "temperature": 37.0, "bloodPressure": "124/84" },
+    { "hour": "16:00", "heartRate": 79, "temperature": 36.8, "bloodPressure": "120/78" },
+    { "hour": "18:00", "heartRate": 77, "temperature": 36.6, "bloodPressure": "118/76" },
+    { "hour": "20:00", "heartRate": 75, "temperature": 36.5, "bloodPressure": "116/74" }
+  ]
 }

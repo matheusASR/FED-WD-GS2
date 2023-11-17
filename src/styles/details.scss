@@ -1,0 +1,70 @@
+.main__details__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 0px;
+}
+
+.example__title {
+  font-size: 20px;
+}
+
+.div__details__container {
+  width: 95%;
+  height: 350px;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.patient__data__title {
+  font-size: 25px;
+  color: yellow;
+}
+
+.patient__data__date {
+  font-size: 15px;
+  color: rgb(255, 255, 133);
+}
+
+.patient-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.patient-table th,
+.patient-table td {
+  border: 1px solid yellow;
+  padding: 8px;
+  text-align: left;
+}
+
+.patient-table th {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.patient-table td {
+  color: yellow;
+}
+.div__details__container2 {
+  width: 95%;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.situation__textarea {
+    height: 100px;
+    width: 30%;
+}
