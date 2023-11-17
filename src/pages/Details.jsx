@@ -3,6 +3,7 @@ import { Header } from "../components/Header";
 import "../styles/details.scss";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
 
 export const Details = () => {
   const navigate = useNavigate();
@@ -41,6 +42,7 @@ export const Details = () => {
     <>
       <Header />
       <main className="main__details__container">
+        <Link className="example__title" to="/home">Home</Link>
         <h1 className="example__title">EXEMPLO DO SOFTWARE:</h1>
         <div className="div__details__container">
           <h2 className="patient__data__title">DADOS DO PACIENTE</h2>
