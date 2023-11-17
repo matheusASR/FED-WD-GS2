@@ -16,9 +16,9 @@ export const Register = () => {
       },
     });
     const usersJSON = await users.json();
-    const userFound = usersJSON.find((u) => u.username === formData.username);
+    const userFound = usersJSON.find((u) => u.email === formData.email);
     if (userFound) {
-      toast.error("Já há um usuário com este nome. Tente outro.");
+      toast.error("Já há um usuário com este email. Tente outro.");
     } else {
       await fetch("http://localhost:5000/users", {
         method: "POST",
