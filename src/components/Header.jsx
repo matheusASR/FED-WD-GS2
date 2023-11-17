@@ -31,18 +31,14 @@ export const Header = () => {
               OLÁ {userInfo.username ? userInfo.username.toUpperCase() : null}
             </p>
             <p className="header__email">{userInfo.email}</p>
-            <p className="header__email">Global Solution 2023 - Engenharia de Software</p>
             <button className="header__logout" onClick={() => logout()}>
               Logout
             </button>
           </>
         ) : (
-          <>
-            <p className="header__title">
-              MindWell - Acompanhamento e Cuidado Pessoal
-            </p>
-            <p className="header__email">Global Solution 2023 - Engenharia de Software</p>
-          </>
+          <p className="header__title">
+            MindWell - Acompanhamento e Cuidado Pessoal
+          </p>
         )}
       </header>
     </>
